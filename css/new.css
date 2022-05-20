@@ -1,0 +1,716 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title {text-align: center;}
+.title h2 {text-align: center;
+    font-size: 45px;
+    padding: 10px;
+}
+.title h2+span {background-color: rgb(16, 113, 198);
+    width: 120px;
+    height: 4px;
+    display: inline-block;
+    text-align: center;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {padding-left: 20px;
+    padding-right: 20px;
+}
+ul {list-style: none;}
+a {text-decoration: none;}
+/*,,,,,,,,,,header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+header {background-color:rgba(0, 0, 0, 0.5);
+    position: fixed;
+    padding: 10px 60px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 4;
+
+}
+header img {width: 80px;
+    float: left;
+}
+header ul {display: inline-block;
+    float: right;
+    font-weight: normal;
+}
+header ul li {display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+header ul li a {color: rgb(16, 113, 198);}
+header ul li a:hover {color: #fff;
+    text-decoration: underline;
+}
+/*.................................................................................................................*/
+.landing {background-image: url(../images/image.jpg);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 20px 40px;
+}
+.landing .container {position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);}
+.landing .container .text {top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.landing .container .text h1 {color: #fff;
+    font-size: 40px;
+}
+.landing .container .text p {color: rgb(12, 69, 118);
+    padding: 10px;
+}
+.landing .container .text .btn1 {background-color: rgb(16, 113, 198);
+    width: 140px;
+    height: 45px;
+    font-size: 18px;
+    border: 0;
+    color: #fff;
+    border-radius: 12px;
+    margin-right: 5px;
+    padding: 10px;
+} 
+.landing .container .text .btn1:hover {background-color: rgb(11, 81, 142);}
+.landing .container .text .btn2 {background-color: #fff;
+    width: 140px;
+    height: 45px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 12px;
+    margin-left: 5px;
+} 
+.landing .container .text .btn2:hover {background-color: rgb(220, 219, 219);}
+/*..........website.............................................................................................*/
+.website {padding: 50px 40px;}
+.website .content {overflow: hidden;
+}
+.website .content .text {
+    background-color:white;
+    margin: 1.5%;
+    width: 30%;
+    padding: 40px 50px;
+    position: relative;
+    text-align: center;
+    border: 1px solid grey;    
+    float: left; 
+    line-height: 1.6;
+    letter-spacing: 2px;
+    z-index: 1;
+} 
+.website .content .text i {color: rgb(60, 140, 210);
+    font-size: 30px;
+    padding: 0 0 20px;
+
+
+}
+.website .content .text h3 {font-size: 30px;
+    transition: 0.7s;
+}
+.website .content .text p {color: grey;
+    padding: 10px;
+}
+.website .content .text a {color: rgb(60, 165, 246);}
+.website .container .text::after{
+    position: absolute;
+    content:"" ;
+    top:0px;
+    left: 0px;
+    width:0px;
+    height: 100%;
+    background-color: black;
+    transition: 1s;
+    z-index: -3;
+}
+.website .container .text:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+}
+.website .container .text:hover h3 {color: #fff;
+    transition: 0.7s;
+}
+/*...........feartured...................................................................................*/
+.featured {background-color: #f6f6f6;
+    padding: 50px 40px;
+    overflow: hidden;
+}
+.featured .content {padding: 50px 30px;}
+.featured .content .feat {width: 30%;
+    margin: 20px;
+    position: relative;
+    text-align: center;   
+    float: left; 
+    z-index: 1;}
+.featured .content .feat img {width: 100%;}
+.featured .content .feat .text {position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    opacity: 0;
+}
+.featured .content .feat:hover .text {visibility: visible;
+    opacity: 1;
+}
+.featured .content .feat .text h3 {color: rgb(25, 90, 228);
+    margin-top: 43%;
+}
+.featured .content .feat .text p {color: #fff;}
+.featured .content .feat .text i {background-color: rgb(9, 115, 196);
+    color: rgb(3, 3, 99);
+    padding: 10px;
+}
+
+/*.........................offer......................*/
+.offer-content{
+    overflow: hidden;
+    padding: 60px 40px; 
+}
+
+.offer-item{
+        width:30% ;
+        height: 250px;
+        float:left;
+        position: relative;
+        transition: 1s;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding:30px;
+        margin-top:20px ; 
+        border: 1px solid #a8a8a8;
+        z-index: 1;
+    }
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    
+}
+.line{
+    width: 50px;
+    height:3px;
+    background-color: #0848c7;
+    text-align: center;
+    display:block;
+    margin: auto;  
+}
+.offer-content .text{
+    padding-left: 30px;
+}
+.offer-item .icon{
+    top:26px;
+    color: #6195ff;
+    display:inline-block;
+    position: absolute;
+    left: 5px;
+    margin:0px 10px 0px 10px;
+
+}
+.offer-item-title{
+   text-transform: capitalize;
+   margin-bottom: 15px;
+   transition: 1s;
+}
+.offer-item-desc{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    line-height: 1.6;
+    color: #999;
+}
+.offer-item.ltr:hover .offer-item-title{
+    color: #fff;
+}
+.offer-item::after {content: "";
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0.8;
+    transition: 1s;
+    background-color: black;
+    z-index: -1;
+}
+.offer-item:hover:after {height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+/*--------------SERVICE------------*/
+.service{
+    
+    background-color: #f9f9f9;
+}
+.service-item{
+    width:50%;
+    float:left;  
+    padding: 40px 60px;
+}
+.service-item .section-header{
+    text-align:left;
+    margin-top: 100px;
+}
+.service-item .section-header .line{
+    margin: 20px 0 45px 0;
+    display: block;
+    background-color: #6195ff;
+    
+}
+.service-item-desc{
+    padding-right: 20px;
+    color:#999;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    
+}
+.service-list {
+    list-style: none;
+}
+.service-list li i {
+    border: 1px solid #6195ff;
+    color: #6195ff;
+    padding: 3px;
+    border-radius: 50%;
+    width: 20px;
+    height:20px;
+}
+.service-list li{
+    margin-bottom: 13px;
+    color: #999;
+}
+.klo {
+    width: 450px;
+    height: 450px;
+display:inline-block;
+margin-top: 100px;
+} 
+.service-bullets{
+    list-style: none;
+    margin-left: 450px;
+}
+.service-bullets li{
+    width:10px;
+    height:10px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin: 10px 5px;
+    border-radius: 50%;   
+}   
+.service-bullets li.active{
+    background-color: #6195ff;
+}
+.service-bullets li:hover{
+    background-color: #6195ff;
+}
+/*..........pricing.....................................................................................................*/
+.pricing {padding: 60px 40px;
+    background-color:white;
+}
+.pricing .content {overflow: hidden;
+    padding: 30px 20px 0;
+}
+.pricing .content .price {width:30% ;
+    border: 1px solid gray;
+    float:left;
+    position: relative;
+    transition: 1s;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+    text-align: center;
+    z-index: 1;
+    margin-top:20px ; }
+.pricing .content .price::after {content: "";
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0.8;
+    transition: 1s;
+    background-color: black;
+    z-index: -1;
+}
+.pricing .content .price:hover:after {height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+.pricing .content .price .circle {width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgb(60, 165, 246);
+    text-align: center;
+    padding: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto; 
+}
+.pricing .content .price:hover .circle {color:white;}
+.pricing .content .price .circle span {font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    margin-top: -10px;
+}
+.pricing .content .price p {line-height: 2;
+    color: #777;
+    font-size: 20px;
+}
+.pricing .content .price a {display: inline-block;
+    border: 1px solid rgb(60, 165, 246);
+    margin: 10px;
+    padding: 10px;
+    width: 160px;
+    color: #000;
+}
+/*........recent.............................................................................*/
+.recent {padding: 60px;
+    background-color: #f6f6f6;
+}
+.recent .content {overflow: hidden;
+    padding: 40px 60px;
+}
+.recent .circle .rece .rrr{
+    width: 350;
+    height: 200;
+}
+.recent .content .rece {width:30% ;
+    float:left;
+    background-color: #fff;
+    position: relative;
+    transition: 1s;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    margin-top:20px ; }
+.recent .content .rece::after {content: "";
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0.6;
+    transition: 1s;
+    background-color: rgb(36, 93, 193);
+}
+.recent .content .rece:hover:after {height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+.recent .content .rece .icon {padding: 20px 0 10px ;}
+.recent .content .rece .icon i {color: rgb(60, 165, 246);}
+.recent .content .rece .text {padding: 10px 20px 10px 0;}
+.recent .content .rece .text h3 {font-weight: 600;
+    padding: 0 10px 10px 0;
+}
+.recent .content .rece .text p {line-height: 1.8;
+    color: #777;
+}
+.recent .content .rece .text a {color: rgb(60, 165, 246);
+    display: inline-block;
+    padding: 20px 0 0px;
+}
+/*........team..........................................................................................................*/
+.team {padding: 60px;}
+.team .content {padding: 40px 60px;
+    overflow: hidden;
+    
+}
+.team .content .team-item {width:30% ;
+    float:left;
+    background-color: #f9f9f9;
+
+    position: relative;
+    transition: 1s;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 30px 30px 10px;
+    margin-top:20px ;
+}
+.team .content .team-item::after {content: "";
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0.6;
+    transition: 1s;
+    background-color: black;
+}
+.team .content .team-item:hover:after {height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+.team .content .team-item .team-img {position: relative;}
+.team .content .team-item .team-img img {width: 100%;}
+.team .content .team-item .team-img .icon {position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.team .content .team-item:hover .team-img .icon {visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.team .content .team-item .team-img .icon i {
+    background-color: rgb(60, 140, 210);
+    color: #fff;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    right: 0;
+    margin-left: auto;
+    font-size: 25px;
+}
+.team .content .team-item h3 {padding: 8px 0;
+    font-size: 25px;
+    transition: 1s;
+}
+.team .content .team-item span {color: #777;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.team .content .team-item:hover h3 {color: #fff;
+    transition: 1s;
+    background-attachment: fixed;
+}
+.team .content .team-item:hover span {color: blue;
+    transition: 1s;
+}
+/*--------------SERVICE------------*/
+.service{
+    
+    background-color: #f9f9f9;
+    margin-top: 300px;
+    padding: 30px;
+}
+.service-item{
+    width:50%;
+    float:left;  
+}
+.service-item .section-header{
+    text-align:left;
+    margin-top: 100px;
+}
+.service-item .section-header .line{
+    margin: 0 0 45px 0;
+    display: block;
+    background-color: #6195ff;
+    margin: auto;
+    
+}
+.service-item-desc{
+    padding-right: 20px;
+    color:#999;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    
+}
+.service-list {
+    list-style: none;
+}
+.service-list li i {
+    border: 1px solid #6195ff;
+    color: #6195ff;
+    padding: 3px;
+    border-radius: 50%;
+    width: 20px;
+    height:20px;
+}
+.service-list li{
+    margin-bottom: 13px;
+    color: #999;
+}
+.klo {
+    width: 450px;
+    height: 450px;
+display:inline-block;
+margin-top: 100px;
+} 
+.service-bullets{
+    list-style: none;
+    text-align: center;
+}
+.service-bullets li{
+    width:10px;
+    height:10px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin: 10px 5px;
+    border-radius: 50%;   
+}   
+.service-bullets li.active{
+    background-color: #6195ff;
+}
+.service-bullets li:hover{
+    background-color: #6195ff;
+}
+/* /////////////// NUMBERS SECTION/////////////////////////////////////////////////////////////////////////////////////////// */
+.numbers {
+    position: relative;
+    background-image: url(../images/eee.jpeg);
+    height:350px;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 150px;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.numbers-items{
+    overflow:hidden;
+    padding-top: 130px;
+}
+.number-item {
+    width: 25%;
+    float: left;
+    text-align:center;
+}
+.number-item .icon{
+    color:#6195ff;
+    margin-bottom: 15px;
+}
+.number-item-title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+.number-item-text {
+    color: #fff;
+}
+
+/* //////////////////////////////////////////// TESTIMONIAL SECTION///////////////////////////////////////////////////////////////////////////////////////////*/
+.testimonial {
+    position: relative;
+    background-image: url(../images/aaa.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+    margin-top: 150px;
+}   
+.testimonial-content{
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+.testimonial-item {
+    float: left;
+    width: 50%;
+    color: #fff;
+    padding-right: 20px;
+    padding-top: 55px;
+    margin-bottom: 110px;
+}
+.testimonial-toplayer{
+   padding:90px 20px 10px 150px;
+   position:relative;
+   line-height: 1.4;
+   margin-bottom: 20px;
+}
+.testimonial-toplayer img{
+   position: absolute;
+   top: 82px;
+   left: 65px;
+   border-radius: 50%;
+}
+.testimonial-desc{
+   text-transform: capitalize;
+   line-height: 1.5;
+   margin-left: 76px;
+   font-size: 14px;
+}
+.testimonial-toplayer span{
+   color: #6195ff;
+}
+            
+/* ////////////////////////////////////////// FOOTER SECTION/////////////////////////////////////////////////////////////////////////////////////////// */
+        .mmg{
+            width: 160px;
+            height: 70px;
+        }
+        .footer{
+            background-color: rgb(40, 37, 37);
+            text-align: center;
+            padding: 80px;}
+        .footer-links{
+            list-style: none;
+            margin: 20px 0;
+        }
+        .footer-links li{
+            display: inline-block;
+            background-color: #6195ff;
+            width:50px;
+            height: 50px;
+            position: relative;
+            z-index: 1;
+            border-radius: 50%;
+        }
+        .footer-links li a{
+            display: block;
+            width:100%;
+            height: 100%;
+            color:#6195ff;
+            color: #fff;
+            line-height: 50px;
+            padding-top: 15px;
+            padding-right: 15px;
+            font-size: 23px;
+            margin: 0 8px;
+        }
+        .footer-links li:after{
+            position: absolute;
+            content: "";
+            opacity: 0;
+            transition: .3s;
+            background-color: #0954ec;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0%;
+            bottom: 0;
+        }
+        .footer-links li:hover:after{
+            opacity: .7;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-radius: 50%;
+        }
+        .footer p{
+            color:#999;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
